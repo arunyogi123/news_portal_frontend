@@ -1,0 +1,29 @@
+{
+  "name": "simplenews-portal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build && rm -rf dist && cp -r out dist",
+    "start": "next start -p 3000 -H 0.0.0.0",
+    "clean": "rm -rf dist out .next",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "next": "^15.2.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^5.8.2"
+  }
+}
