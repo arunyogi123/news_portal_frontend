@@ -1,5 +1,6 @@
 'use client';
 
+
 import React, { useState, useEffect, useMemo } from 'react';
 import { ARTICLES_DATA } from '../data/newsData';
 import { Article, Category, ReadingLevel, TextSize } from '../types';
