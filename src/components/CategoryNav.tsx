@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Category } from '../types';
 import { Compass, Globe, Cpu, Sparkles, Leaf, Coffee, BookmarkCheck } from 'lucide-react';
