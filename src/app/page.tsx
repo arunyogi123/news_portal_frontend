@@ -20,6 +20,7 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
+
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
