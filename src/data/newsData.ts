@@ -24,7 +24,7 @@ export const ARTICLES_DATA: Article[] = [
     sections: [
       {
         heading: 'What Just Happened?',
-        paragraph: 'A new global energy report shows that solar power is growing faster than anyone expected. Large fields with shiny panels and rooftops on ordinary houses collected record amounts of sunlight and turned it into clean electricity.'
+        paragraph: 'A new global energy report shows that solar power is growing faster than anyone expected.Large fields with shiny panels and rooftops on ordinary houses collected record amounts of sunlight and turned it into clean electricity.'
       },
       {
         heading: 'Why Is Solar Growing So Fast?',
