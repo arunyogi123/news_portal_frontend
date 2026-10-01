@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Article, ReadingLevel } from '../types';
 import { Clock, Bookmark, ArrowUpRight, BookA, Newspaper, Sparkles, Cpu, Waves, Apple, Globe, Sun } from 'lucide-react';
 
+
 interface ArticleCardProps {
   article: Article;
   readingLevel: ReadingLevel;
