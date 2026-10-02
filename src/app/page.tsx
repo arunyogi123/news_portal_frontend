@@ -20,7 +20,6 @@ import {
   ArrowLeft,
 } from "lucide-react";
 
-
 export default function Home() {
   const [mounted, setMounted] = useState(false);
 
@@ -187,9 +186,15 @@ export default function Home() {
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-8">
         {/* Saved Only Header Banner */}
         {showSavedOnly && (
-          <div className="bg-amber-100/70 border border-amber-200 rounded-2xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div
+            className="bg-amber-100/70 border border-amber-200 rounded-2xl p-5 sm:p-6 flex flex-col 
+             sm:flex-row sm:items-center justify-between gap-4"
+          >
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-500 text-stone-950 flex items-center justify-center font-bold">
+              <div
+                className="w-10 h-10 rounded-xl bg-amber-500 text-stone-950 
+                 flex items-center justify-center font-bold"
+              >
                 <Bookmark className="w-5 h-5 fill-stone-950" />
               </div>
               <div>
@@ -205,7 +210,9 @@ export default function Home() {
 
             <button
               onClick={() => setShowSavedOnly(false)}
-              className="self-start sm:self-center px-4 py-2 rounded-xl bg-white border border-stone-200 text-xs font-semibold text-stone-700 hover:bg-stone-50 shadow-2xs transition-colors cursor-pointer inline-flex items-center gap-1.5"
+              className="self-start sm:self-center px-4 py-2 rounded-xl bg-white 
+              border border-stone-200 text-xs font-semibold text-stone-700 hover:bg-stone-50 
+              shadow-2xs transition-colors cursor-pointer inline-flex items-center gap-1.5"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Back to All News</span>
@@ -215,7 +222,10 @@ export default function Home() {
 
         {/* Search Header Banner */}
         {searchQuery.trim() && (
-          <div className="bg-stone-100 border border-stone-200 rounded-2xl p-4 sm:p-5 flex items-center justify-between gap-4">
+          <div
+            className="bg-stone-100 border border-stone-200 rounded-2xl p-4 sm:p-5 
+            flex items-center justify-between gap-4"
+          >
             <div className="flex items-center gap-2 text-sm text-stone-700">
               <Search className="w-4 h-4 text-stone-500" />
               <span>
@@ -277,7 +287,10 @@ export default function Home() {
             {/* Empty State */}
             {feedArticles.length === 0 && (
               <div className="text-center py-16 px-4 bg-white rounded-2xl border border-stone-200">
-                <div className="w-12 h-12 rounded-full bg-stone-100 text-stone-400 flex items-center justify-center mx-auto mb-3">
+                <div
+                  className="w-12 h-12 rounded-full bg-stone-100 text-stone-400 flex items-center 
+                  justify-center mx-auto mb-3"
+                >
                   <Compass className="w-6 h-6" />
                 </div>
                 <h4 className="text-base font-bold text-stone-800 mb-1">
@@ -293,7 +306,8 @@ export default function Home() {
                 {showSavedOnly ? (
                   <button
                     onClick={() => setShowSavedOnly(false)}
-                    className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-semibold hover:bg-amber-700 cursor-pointer shadow-xs transition-colors"
+                    className="px-4 py-2 rounded-xl bg-amber-600 text-white text-xs font-semibold 
+                    hover:bg-amber-700 cursor-pointer shadow-xs transition-colors"
                   >
                     Browse All Stories
                   </button>
@@ -303,7 +317,8 @@ export default function Home() {
                       setSearchQuery("");
                       setSelectedCategory("All");
                     }}
-                    className="px-4 py-2 rounded-xl bg-stone-900 text-white text-xs font-semibold hover:bg-stone-800 cursor-pointer shadow-xs transition-colors"
+                    className="px-4 py-2 rounded-xl bg-stone-900 text-white text-xs font-semibold 
+                    hover:bg-stone-800 cursor-pointer shadow-xs transition-colors"
                   >
                     Reset Filters
                   </button>
@@ -333,7 +348,10 @@ export default function Home() {
             {/* Reader Learning Progress Card */}
             <div className="bg-white rounded-2xl border border-stone-200 p-5 shadow-2xs">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold">
+                <div
+                  className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center 
+                justify-center font-bold"
+                >
                   <BookOpenCheck className="w-4 h-4" />
                 </div>
                 <div>
@@ -346,7 +364,10 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between p-3.5 rounded-xl bg-stone-50 border border-stone-100 mb-3">
+              <div
+                className="flex items-center justify-between p-3.5 rounded-xl 
+                bg-stone-50 border border-stone-100 mb-3"
+              >
                 <div>
                   <span className="text-xs text-stone-500 block">
                     Stories Opened
@@ -413,7 +434,8 @@ export default function Home() {
 
               <button
                 onClick={() => setIsAboutOpen(true)}
-                className="mt-4 w-full py-2 rounded-xl bg-white hover:bg-stone-50 border border-stone-200 text-xs font-semibold text-stone-700 transition-colors cursor-pointer"
+                className="mt-4 w-full py-2 rounded-xl bg-white hover:bg-stone-50 border 
+                border-stone-200 text-xs font-semibold text-stone-700 transition-colors cursor-pointer"
               >
                 Learn more about SimpleNews Media
               </button>
