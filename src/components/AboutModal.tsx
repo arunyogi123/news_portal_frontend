@@ -20,7 +20,8 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/50 backdrop-blur-xs">
       <div
-        className="bg-white rounded-2xl sm:rounded-3xl border border-stone-200 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative"
+        className="bg-white rounded-2xl sm:rounded-3xl border 
+        border-stone-200 max-w-lg w-full p-6 sm:p-8 shadow-2xl relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -32,7 +33,10 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
         </button>
 
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-10 h-10 rounded-xl bg-amber-500 text-stone-950 flex items-center justify-center font-bold">
+          <div
+            className="w-10 h-10 rounded-xl bg-amber-500 text-stone-950 
+          flex items-center justify-center font-bold"
+          >
             <Sparkles className="w-5 h-5" />
           </div>
           <div>
