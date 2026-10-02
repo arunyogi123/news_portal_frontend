@@ -1,6 +1,6 @@
 export type Category = 'All' | 'World' | 'Tech' | 'Science' | 'Nature' | 'Life';
 
-export type ReadingLevel = 'level1' | 'level2'; // level1: super simple, level2: standard easy
+export type ReadingLevel = 'level1' | 'level2'; 
 
 export type TextSize = 'normal' | 'large' | 'xlarge';
 
