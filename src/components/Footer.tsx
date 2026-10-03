@@ -165,4 +165,3 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
     </footer>
   );
 };
-
