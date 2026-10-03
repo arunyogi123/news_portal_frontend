@@ -192,7 +192,6 @@ export default function Home() {
           matchesTitle || matchesSnippet || matchesWords || matchesCategory
         );
       }
-
       return true;
     });
   }, [selectedCategory, searchQuery, showSavedOnly, savedArticleIds]);
