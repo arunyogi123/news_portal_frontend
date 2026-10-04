@@ -58,6 +58,7 @@ export const Header: React.FC<HeaderProps> = ({
             SimpleNews Media
           </span>
         </div>
+
         <button
           id="btn-learn-how-it-works"
           onClick={onOpenAbout}
@@ -148,6 +149,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center justify-between sm:justify-end gap-2.5">
             {/* Reading Level Switcher */}
             <div className="flex items-center bg-stone-100 p-1 rounded-xl border border-stone-200 text-xs">
+
               <button
                 id="btn-reading-level-1"
                 onClick={() => setReadingLevel("level1")}
@@ -162,6 +164,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <Sparkles className="w-3 h-3 text-amber-600" />
                 <span>Super Simple</span>
               </button>
+
               <button
                 id="btn-reading-level-2"
                 onClick={() => setReadingLevel("level2")}
@@ -174,6 +177,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 Standard Easy
               </button>
+
             </div>
 
             {/* Font Size Selector */}
@@ -193,6 +197,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 A
               </button>
+
               <button
                 id="btn-text-size-large"
                 onClick={() => setTextSize("large")}
@@ -205,6 +210,7 @@ export const Header: React.FC<HeaderProps> = ({
               >
                 A+
               </button>
+
               <button
                 id="btn-text-size-xlarge"
                 onClick={() => setTextSize("xlarge")}
@@ -235,6 +241,7 @@ export const Header: React.FC<HeaderProps> = ({
               />
               <span>Saved ({savedCount})</span>
             </button>
+            
           </div>
         </div>
       </div>
