@@ -1,7 +1,18 @@
-import React, { useState } from 'react';
-import { Article, ReadingLevel } from '../types';
-import { Clock, Bookmark, ArrowUpRight, BookA, Newspaper, Sparkles, Cpu, Waves, Apple, Globe, Sun } from 'lucide-react';
-
+import React, { useState } from "react";
+import { Article, ReadingLevel } from "../types";
+import {
+  Clock,
+  Bookmark,
+  ArrowUpRight,
+  BookA,
+  Newspaper,
+  Sparkles,
+  Cpu,
+  Waves,
+  Apple,
+  Globe,
+  Sun,
+} from "lucide-react";
 
 interface ArticleCardProps {
   article: Article;
@@ -19,17 +30,27 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
   onToggleSave,
 }) => {
   const [imgError, setImgError] = useState(false);
-  const displayTitle = readingLevel === 'level1' ? article.simpleTitle : article.title;
-  const displaySnippet = readingLevel === 'level1' ? article.superSimpleSnippet : article.shortSnippet;
+  const displayTitle =
+    readingLevel === "level1" ? article.simpleTitle : article.title;
+  const displaySnippet =
+    readingLevel === "level1"
+      ? article.superSimpleSnippet
+      : article.shortSnippet;
 
   const renderCategoryIcon = () => {
     switch (article.category) {
-      case 'Science': return <Sparkles className="w-10 h-10 text-amber-500/80" />;
-      case 'Tech': return <Cpu className="w-10 h-10 text-sky-500/80" />;
-      case 'Nature': return <Sun className="w-10 h-10 text-emerald-500/80" />;
-      case 'Life': return <Apple className="w-10 h-10 text-rose-500/80" />;
-      case 'World': return <Globe className="w-10 h-10 text-blue-500/80" />;
-      default: return <Newspaper className="w-10 h-10 text-amber-500/80" />;
+      case "Science":
+        return <Sparkles className="w-10 h-10 text-amber-500/80" />;
+      case "Tech":
+        return <Cpu className="w-10 h-10 text-sky-500/80" />;
+      case "Nature":
+        return <Sun className="w-10 h-10 text-emerald-500/80" />;
+      case "Life":
+        return <Apple className="w-10 h-10 text-rose-500/80" />;
+      case "World":
+        return <Globe className="w-10 h-10 text-blue-500/80" />;
+      default:
+        return <Newspaper className="w-10 h-10 text-amber-500/80" />;
     }
   };
 
@@ -37,7 +58,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
     <article className="group bg-white rounded-2xl border border-stone-200/80 overflow-hidden shadow-2xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
       <div>
         {/* Card Header Image */}
-        <div 
+        <div
           onClick={() => onSelectArticle(article)}
           className="relative h-48 sm:h-52 overflow-hidden bg-stone-100 cursor-pointer"
         >
@@ -73,7 +94,9 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             className="absolute top-3 right-3 p-2 rounded-full bg-white/90 hover:bg-white text-stone-600 hover:text-amber-600 shadow-xs backdrop-blur-xs transition-colors cursor-pointer"
             title={isSaved ? "Remove from saved" : "Save article"}
           >
-            <Bookmark className={`w-3.5 h-3.5 ${isSaved ? 'fill-amber-600 text-amber-600' : ''}`} />
+            <Bookmark
+              className={`w-3.5 h-3.5 ${isSaved ? "fill-amber-600 text-amber-600" : ""}`}
+            />
           </button>
         </div>
 
@@ -90,7 +113,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           </div>
 
           {/* Title */}
-          <h3 
+          <h3
             onClick={() => onSelectArticle(article)}
             className="font-news text-lg sm:text-xl font-bold text-stone-900 leading-snug mb-2.5 group-hover:text-amber-700 cursor-pointer transition-colors"
           >
@@ -122,7 +145,6 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
           </button>
         </div>
       </div>
-
     </article>
   );
 };
