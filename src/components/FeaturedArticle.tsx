@@ -129,6 +129,7 @@ export const FeaturedArticle: React.FC<FeaturedArticleProps> = ({
               <span>Read Full Story</span>
               <ArrowRight className="w-4 h-4" />
             </button>
+            
           </div>
 
         </div>
