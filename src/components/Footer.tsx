@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
 // Icons used in the advice strip and brand block
 import {
   Newspaper,
-  Heart,        
-  Sparkles,     
-  BookOpen,    
+  Heart,
+  Sparkles,
+  BookOpen,
   Clock,
   Headphones,
   Bookmark,
-} from 'lucide-react';
+} from "lucide-react";
 
 // Shared type for categories (World, Tech, Science, etc.)
-import { Category } from '../types';
+import { Category } from "../types";
 
 // Props contract for the Footer component:
 //   - onSelectCategory: called when the user clicks a quick-link category
@@ -22,17 +22,18 @@ interface FooterProps {
   onOpenAbout: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout }) => {
+export const Footer: React.FC<FooterProps> = ({
+  onSelectCategory,
+  onOpenAbout,
+}) => {
   return (
     <footer className="mt-16 bg-white border-t border-stone-200">
-
       {/* ────────────────────────────────────────────────────────
           TOP STRIP: Three "reader advice" cards
           Helps beginners build a reading habit with short tips.
           ──────────────────────────────────────────────────────── */}
       <div className="bg-stone-100/70 border-b border-stone-200/60 py-6 px-4">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-stone-600">
-
           {/* Tip 1: Read daily (Clock icon, amber theme) */}
           <div className="flex items-start gap-3 p-3 rounded-xl bg-white border border-stone-200/60">
             <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
@@ -88,7 +89,6 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
           ──────────────────────────────────────────────────────── */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-
           {/* Brand block: logo + tagline */}
           <div className="flex items-center gap-3 text-center md:text-left">
             <div className="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold">
@@ -108,7 +108,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
               Category value. Dots ("•") act as visual separators. */}
           <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-medium text-stone-600">
             <button
-              onClick={() => onSelectCategory('World')}
+              onClick={() => onSelectCategory("World")}
               className="hover:text-amber-700 cursor-pointer"
             >
               World
@@ -116,7 +116,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
             <span>•</span>
 
             <button
-              onClick={() => onSelectCategory('Tech')}
+              onClick={() => onSelectCategory("Tech")}
               className="hover:text-amber-700 cursor-pointer"
             >
               Technology
@@ -124,7 +124,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
             <span>•</span>
 
             <button
-              onClick={() => onSelectCategory('Science')}
+              onClick={() => onSelectCategory("Science")}
               className="hover:text-amber-700 cursor-pointer"
             >
               Space &amp; Science
@@ -132,7 +132,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
             <span>•</span>
 
             <button
-              onClick={() => onSelectCategory('Nature')}
+              onClick={() => onSelectCategory("Nature")}
               className="hover:text-amber-700 cursor-pointer"
             >
               Environment
@@ -140,7 +140,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onOpenAbout })
             <span>•</span>
 
             <button
-              onClick={() => onSelectCategory('Life')}
+              onClick={() => onSelectCategory("Life")}
               className="hover:text-amber-700 cursor-pointer"
             >
               School &amp; Daily Life
