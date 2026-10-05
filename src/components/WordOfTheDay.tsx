@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
-import { GLOSSARY_TERMS } from '../data/newsData';
-import { BookOpen, ChevronRight, ChevronLeft, Lightbulb, ArrowRight } from 'lucide-react';
+import React, { useState } from "react";
+import { GLOSSARY_TERMS } from "../data/newsData";
+import {
+  BookOpen,
+  ChevronRight,
+  ChevronLeft,
+  Lightbulb,
+  ArrowRight,
+} from "lucide-react";
 
 export const WordOfTheDay: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +18,9 @@ export const WordOfTheDay: React.FC = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + GLOSSARY_TERMS.length) % GLOSSARY_TERMS.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + GLOSSARY_TERMS.length) % GLOSSARY_TERMS.length,
+    );
   };
 
   return (
@@ -52,9 +60,7 @@ export const WordOfTheDay: React.FC = () => {
 
       <div className="bg-white/90 rounded-xl p-4 border border-amber-200/60 mb-3 shadow-2xs">
         <div className="flex items-baseline gap-2 mb-1.5">
-          <h3 className="text-base font-bold text-stone-900">
-            {term.term}
-          </h3>
+          <h3 className="text-base font-bold text-stone-900">{term.term}</h3>
           <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-100 text-amber-900">
             {term.category}
           </span>
