@@ -143,6 +143,7 @@ export const ArticleCard: React.FC<ArticleCardProps> = ({
             <span>Read Story</span>
             <ArrowUpRight className="w-3.5 h-3.5" />
           </button>
+          
         </div>
       </div>
     </article>
