@@ -122,6 +122,7 @@ export const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
         >
           Got it, let's explore!
         </button>
+
       </div>
     </div>
   );
