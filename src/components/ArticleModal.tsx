@@ -439,6 +439,7 @@ export const ArticleModal: React.FC<ArticleModalProps> = ({
             <CheckCircle2 className="w-4 h-4 text-emerald-600" />
             <span>You finished reading this story!</span>
           </span>
+          
           <button
             onClick={onClose}
             className="px-4 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white 
