@@ -10,7 +10,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Sun',
     date: 'Sep 18, 2026',
     readTime: '2 min read',
-    imageUrl: '/images/solar_energy_field_1790144404253.jpg',
+    imageUrl: '/images/solar_energy.jpg',
     imageCaption: 'Solar panels soaking in bright sunlight to create electricity.',
     featured: true,
     shortSnippet: 'More electricity was generated from sunlight in the last twelve months than from any other new energy source in history.',
@@ -24,7 +24,7 @@ export const ARTICLES_DATA: Article[] = [
     sections: [
       {
         heading: 'What Just Happened?',
-        paragraph: 'A new global energy report shows that solar power is growing faster than anyone expected.Large fields with shiny panels and rooftops on ordinary houses collected record amounts of sunlight and turned it into clean electricity.'
+        paragraph: 'A new global energy report shows that solar power is growing faster than anyone expected. Large fields with shiny panels and rooftops on ordinary houses collected record amounts of sunlight and turned it into clean electricity.'
       },
       {
         heading: 'Why Is Solar Growing So Fast?',
@@ -65,7 +65,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Sparkles',
     date: 'Sep 17, 2026',
     readTime: '3 min read',
-    imageUrl: '/images/space_telescope_planet_1790144424746.jpg',
+    imageUrl: '/images/space.jpg',
     imageCaption: 'A deep view into space showing stars, planets, and cosmic clouds.',
     featured: false,
     shortSnippet: 'Giant telescopes in orbit have detected water vapor in the sky of a planet far beyond our solar system.',
@@ -120,7 +120,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Cpu',
     date: 'Sep 16, 2026',
     readTime: '2 min read',
-    imageUrl: '/images/ai_medical_health_1790144442247.jpg',
+    imageUrl: '/images/medical_health.jpg',
     imageCaption: 'A doctor using an iPad and digital monitor to inspect medical scans.',
     featured: false,
     shortSnippet: 'Hospitals are testing smart computer tools that can review X-rays in seconds and assist human doctors.',
@@ -169,7 +169,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Waves',
     date: 'Sep 15, 2026',
     readTime: '3 min read',
-    imageUrl: '/images/ocean_clean_water_1790144463600.jpg',
+    imageUrl: '/images/ocean.jpg',
     imageCaption: 'Vibrant underwater coral reef full of tropical fish and crystal-clear water.',
     featured: false,
     shortSnippet: 'Marine biologists are growing heat-resilient coral in ocean nurseries and replanting them on damaged reefs.',
@@ -224,7 +224,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Apple',
     date: 'Sep 14, 2026',
     readTime: '2 min read',
-    imageUrl: '/images/school_garden_food_1790144557678.jpg',
+    imageUrl: '/images/garden.jpg',
     imageCaption: 'Fresh garden vegetables harvested with rich soil and green leaves.',
     featured: false,
     shortSnippet: 'Elementary and middle schools around the country are turning unused patches of grass into lively garden beds.',
@@ -273,7 +273,7 @@ export const ARTICLES_DATA: Article[] = [
     categoryIcon: 'Globe',
     date: 'Sep 13, 2026',
     readTime: '2 min read',
-    imageUrl: '/images/city_bike_paths_1790144491990.jpg',
+    imageUrl: '/images/bikepath.jpg',
     imageCaption: 'People riding bicycles down a wide, scenic lane separated from cars.',
     featured: false,
     shortSnippet: 'Major cities are creating protected lanes with green paint and concrete borders so families can cycle safely.',
